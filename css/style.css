@@ -5,7 +5,17 @@ body {
     padding: 0;
 
 }
-
+#grid_wrapper2 {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 50px 500px minmax(150px, 1fr);
+    grid-template-areas:
+    "hea hea"
+    "nav nav"
+    "ks1 ks2"
+    "foo foo"
+}
 #grid_wrapper {
     display: grid;
     height: 100vh;
@@ -27,7 +37,7 @@ header {
 }
 nav {
     display: flex;
-    background: pink;
+    background: #27ae60;
     grid-area: nav;
     justify-content: center;
     align-items: center;
@@ -60,9 +70,13 @@ nav {
 #sec2{
     grid-area: sec2;
 }
+#Sibirisk{
+    width: 100%;
+    height: 100%;
+}
 
 footer {
-    background-color: #333;
+    background-color: black;
     color: #fff;
     text-align: center;
     padding: 1em 0;
@@ -81,4 +95,18 @@ a {
     font-size: 20px;
     text-decoration: none;
     color: aqua;
+}
+
+#kontaktsec1{
+    grid-area: ks1;
+    background-color: #333;
+
+}
+#kontaktphone{
+    height: 100%;
+    width: 100%;
+}
+#kontaktsec2{
+    grid-area: ks2;
+    background-color: #333;
 }
