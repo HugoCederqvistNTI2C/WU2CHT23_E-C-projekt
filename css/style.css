@@ -9,23 +9,37 @@ body {
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 50px 500px minmax(150px, 1fr);
+    grid-template-rows: 100px 50px 500px minmax(100px, 1fr);
     grid-template-areas:
     "hea hea"
     "nav nav"
     "ks1 ks2"
     "foo foo"
+    ;
 }
 #grid_wrapper {
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 100px 50px 500px minmax(150px, 1fr);
+    grid-template-rows: 100px 50px 500px minmax(100px, 1fr);
     grid-template-areas:
     "hea hea"
     "nav nav"
     "sec1 sec2"
     "foo foo"
+    ;
+}
+#grid_wrapper3{
+    display: grid;
+    height: 100vh;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 50px 350px minmax(100px, 1fr);
+    grid-template-areas:
+    "hea hea hea"
+    "nav nav nav"
+    "card1 card2 card3"
+    "foo foo foo"
     ;
 }
 header {
@@ -99,7 +113,7 @@ a {
 
 #kontaktsec1{
     grid-area: ks1;
-    background-color: #333;
+    background-color: white;
 
 }
 #kontaktphone{
@@ -108,5 +122,42 @@ a {
 }
 #kontaktsec2{
     grid-area: ks2;
-    background-color: #333;
+    background-color: white;
+}
+
+#cardsec1{
+    grid-area: card1;
+    background-color: #27ae60;
+    font-size: 1.5rem;
+    color: white;
+
+}
+#cardsec2{
+    grid-area: card2;
+    justify-items: center;
+    background-color: #27ae60;
+    font-size: 1.5rem;
+    color: white;
+
+}
+#cardsec3{
+    grid-area: card3;
+    background-color: #27ae60;
+    font-size: 1.5rem;
+    color: white;
+}
+#norr{
+    width: 90%;
+    height: 90%;
+    border-radius: 32px;
+}
+#grand{
+    height: 90%;
+    width: 90%;
+    border-radius: 32px;
+}
+#banff{
+    width: 90%;
+    height: 90%;
+    border-radius: 32px;
 }
